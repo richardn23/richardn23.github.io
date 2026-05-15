@@ -167,8 +167,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
         <!-- Project 3 -->
         <div class="row align-items-start">
@@ -183,7 +181,7 @@
                 I wanted to build something that actually felt fun to play, not just a textbook exercise. Horse racing gave me the perfect premise — simple enough for anyone to follow, but with enough strategic depth to make every decision matter. Managing a horse through a full season, upgrading it between races, and reacting to surprises mid-race turned a coding assignment into something I genuinely wanted to finish.
               </p>
               <p>
-                You race a single horse across a six-race campaign on tracks of 100, 200, and 400 metres against five opponents. Between races you spend trophies on stat upgrades — speed, stamina, and power each affect your horse differently. During a race, quick-time events fire before each round offering three choices with clear trade-offs: burn stamina for a big boost, play it safe, or ease off to recover energy. A live board shows all six horses by placement, distance travelled, a progress bar, and how far each one has left to go.
+                You race a single horse across a six-race campaign on tracks of 100, 200, and 400 metres against five opponents. Between races you spend trophies on stat upgrades — speed, stamina, and power each affect your horse differently. During a race, events fire before each round offering three choices with clear trade-offs: burn stamina for a big boost, play it safe, or ease off to recover energy. A live board shows all six horses by placement, distance travelled, a progress bar, and how far each one has left to go.
               </p>
               <p>
                 Built in Java with no external frameworks, the architecture separates concerns cleanly: Race acts as a referee managing what happens on the track, RaceManager acts as a tournament director scheduling the six races and generating scaled opponents, and Simulator mediates between them as the game loop. Opponent stats are generated using the Abstract Factory pattern, scaled to race difficulty and track length. Event selection uses a weighted registry so adding new event types never requires touching the selection logic.
@@ -195,7 +193,7 @@
             </div>
           </div>
         </div>
-      </section>
+    </section>
 
 
     <section class="site-section" id="contact-section" data-aos="fade">
