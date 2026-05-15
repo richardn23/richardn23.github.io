@@ -180,19 +180,15 @@
             <div class="mb-4">
               <h3>Horse Racing Simulator</h3>
               <p>
-                Motivation
                 I wanted to build something that actually felt fun to play, not just a textbook exercise. Horse racing gave me the perfect premise — simple enough for anyone to follow, but with enough strategic depth to make every decision matter. Managing a horse through a full season, upgrading it between races, and reacting to surprises mid-race turned a coding assignment into something I genuinely wanted to finish.
               </p>
               <p>
-                What It Does
                 You race a single horse across a six-race campaign on tracks of 100, 200, and 400 metres against five opponents. Between races you spend trophies on stat upgrades — speed, stamina, and power each affect your horse differently. During a race, quick-time events fire before each round offering three choices with clear trade-offs: burn stamina for a big boost, play it safe, or ease off to recover energy. A live board shows all six horses by placement, distance travelled, a progress bar, and how far each one has left to go.
               </p>
               <p>
-                Design
                 Built in Java with no external frameworks, the architecture separates concerns cleanly: Race acts as a referee managing what happens on the track, RaceManager acts as a tournament director scheduling the six races and generating scaled opponents, and Simulator mediates between them as the game loop. Opponent stats are generated using the Abstract Factory pattern, scaled to race difficulty and track length. Event selection uses a weighted registry so adding new event types never requires touching the selection logic.
               </p>
               <p>
-                My Implementation
                 I was personally responsible for the horse factory, the full event system, and the Simulator display loop. The horse factory was built with test-driven development across six cycles covering budget accuracy, stat invariants, edge cases, and statistical distribution over thousands of generated horses. The round lifecycle was split into prepare and execute phases after discovering that generating QTEs after movement made the player's choice feel one round late — a small change that made the game noticeably more responsive.
                 </p>
               </div>
